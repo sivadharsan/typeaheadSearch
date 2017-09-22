@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <title>Welcome to my Type Ahead functionality.</title>
     <style>
     #searchResultsDropDown {
       visibility: hidden;
@@ -13,12 +15,10 @@
   <body>
     <section id="typeheadSection">
         <div>Enter text to search</div>
-        <input id="searchText" type="search" onkeyup="typeHead.getData()" onkeydown="typeHead.hideDropDown()"/>
-
+          <input id="searchText" type="search" onkeyup="typeHead.GetData()" onkeydown="typeHead.hideDropDown()"/>
         <div>
           <select id="searchResultsDropDown" multiple></select>
         </div>
-
     </section>
 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>

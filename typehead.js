@@ -1,7 +1,7 @@
 var typeHead = (function(){
     "use strict";
     var searchResultsDropDown = document.getElementById('searchResultsDropDown');
-    function getData(){
+    function GetData(){
         var searchTextValue = $("#searchText").val();
         this.searchResults = [
             "January",
@@ -32,7 +32,7 @@ var typeHead = (function(){
 
                searchResultsDropDown.style.visibility = "visible";
           }, 500);
-    };
+    }
 
     function hideDropDown(){
       searchResultsDropDown.style.visibility = "hidden";
@@ -41,5 +41,5 @@ var typeHead = (function(){
     return {
       getData: getData,
       hideDropDown: hideDropDown
-    }
+    };
 }());
