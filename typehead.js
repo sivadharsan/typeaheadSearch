@@ -39,7 +39,7 @@ var typeHead = (function(){
     }
 
     return {
-      getData: getData,
+      GetData: GetData,
       hideDropDown: hideDropDown
     };
 }());
